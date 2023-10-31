@@ -1,2 +1,13 @@
-sadaswda
-
+PowerShell
+----------------
+# "Comando para crear un usuario"
+New-ADUser 
+-Name "(nombre del usuario)" 
+-path "(Ubicación donde queremos poner el usuario usando CN,OU o DC) 
+-SamAccountName "(Nombre de logearte) 
+-UserPrincipalName "(Nombre de usuario en el dominio)"
+-AccountPassword (ConverTo-SecureString "(La contraseña)" 
+-AsPlainText -Force) 
+-GivenName "(Nombre de usuario)" 
+-Enabled ($true o $false) 
+-PasswordNeverExpires ($true o $false)
